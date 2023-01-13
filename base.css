@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  min-height: 0vw;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: unset;
+  overflow-anchor: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+main {
+  display: block;
+}
+
+section {
+  padding: 50px 157px;
+  border-bottom: dotted 2px black;
+}
+
+h1 {
+  margin-bottom: 45px;
+  color: black;
+  text-align: center;
+}
+
+.logos-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-element {
+  background-color: cornflowerblue;
+}
+
+@media (max-width: 680px) {
+  .logo-element:nth-child(-n + 2) {
+    display: none;
+  }
+}

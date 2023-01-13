@@ -1,0 +1,23 @@
+.logos-craft-grid {
+  grid-gap: clamp(15px, calc(15px + (20 - 15) * ((100vw - 1024px) / (1153 - 1024))), 20px);
+}
+
+.logo-craft {
+  width: clamp(130px, calc(130px + (152 - 130) * ((100vw - 1024px) / (1440 - 1024))), 152px);
+  height: clamp(45px, calc(45px + (60 - 45) * ((100vw - 1024px) / (1440 - 1024))), 60px);
+}
+
+@media (max-width: 1023px) {
+  .logos-craft-grid {
+    grid-gap: clamp(8px, calc(8px + (15 - 8) * ((100vw - 834px) / (1023 - 834))), 15px);
+  }
+
+  .logos-craft {
+    padding: 50px 20px;
+  }
+
+  .logo-craft {
+    width: clamp(80px, calc(80px + (130 - 80) * ((100vw - 834px) / (1023 - 834))), 130px);
+    height: clamp(35px, calc(35px + (45 - 35) * ((100vw - 834px) / (1023 - 834))), 45px);
+  }
+}
